@@ -34,9 +34,10 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">失踪事件に引き続き、研究中の生物の脱走騒ぎが発生した。<br>
-              政府の発表によるとどうやらその生物はいまだにほぼ未解明で人に危害を与える可能性があるらしい。<br>
-              できる限りの情報収集を図る研究所と政府は、失踪した研究者が残した4つのメモを公開した。</p>
+            <p class="text-center">３日後、さらなるニュースが到来。<br>
+              いきなり地域一帯に戒厳令が敷かれ、一歩も外に出られなくなった。<br>
+              その最中、国から高額な報償金付きの謎が布告された。
+              暇を持て余した結果、金に目が眩み、謎を解くことにした。</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
@@ -86,10 +87,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">メモの修正が終わり、全貌が明らかになった！<br>
-                だがこの違和感は何なのだろう...<br>
-                それにクイズを解いたはずなのに戒厳令が解除されない。<br>
-                これはどういうことなんだ？</div>
+              <div class="clear-message__content">奇跡的に謎の手がかりを発見し、報告した<br>
+                報償金の振り込みが楽しみだ！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -257,10 +256,10 @@ Youtube貼り付けここまで -->
 
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>番号をを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
 
             <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">ヒント ></a>
+            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
 
