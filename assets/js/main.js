@@ -27,7 +27,6 @@ const app = Vue.createApp({
         },
         stage3: {
           q1: '１　6 10 11 13 17 22 23 24 ',
-          q2: '①+8 11 21 25',
           // q3: 'ききき',
         }
       },
@@ -87,7 +86,7 @@ const app = Vue.createApp({
     *  nextをtrueにして次のステージを表示します。
     */
     nextStage(stage) {
-      this.clear[stage] = false;
+      this.clear[stage] = true;
       this.next[stage] = true;
     },
   }
@@ -99,7 +98,7 @@ app.component('answer-input', {
   data: function () {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
-      okMessage: '正解！',
+      okMessage: 'どうやら正しかったようだ。',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       message: '',
       inputAnswer: '',
