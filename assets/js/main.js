@@ -87,7 +87,7 @@ const app = Vue.createApp({
     */
     nextStage(stage) {
       this.clear[stage] = true;
-      this.next[stage] = true;
+      this.next[stage] = false;
     },
   }
 })
