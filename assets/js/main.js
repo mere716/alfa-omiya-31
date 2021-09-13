@@ -86,8 +86,8 @@ const app = Vue.createApp({
     *  nextをtrueにして次のステージを表示します。
     */
     nextStage(stage) {
-      this.clear[stage] = true;
-      this.next[stage] = false;
+      this.clear[stage] = false;
+      this.next[stage] = true;
     },
   }
 })
