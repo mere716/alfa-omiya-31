@@ -67,7 +67,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>ひらがな四文字のキーワードを入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -128,7 +128,7 @@ Youtube貼り付けここまで -->
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
+              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>漢字三文字のキーワードを入力</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
@@ -214,8 +214,19 @@ Youtube貼り付けここまで -->
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>抗え</h2>
             <p class="text-center">まるで作り話かのようにどうやら化物には定番な弱点があるらしく、水に弱いらしい。<br>
-              また、光学的な知覚ではなく音の反響を用いて周囲の状況を認識する、<br>
-              
+              また、視力は弱いものの、エコロケーションの能力（すなわち光学的知覚ではなく、<br>
+              音の反響によって周囲の状況を把握する能力）を持っているらしい。<br>
+              さらに怪物の行動アルゴリズムはごく単純らしく、<br>
+              1.現在地の進行方向1マス前に障害物が存在しなければ、前に1マス進む<br>
+              2.前に障害物が存在する場合<br>
+                3.進行方向右に障害物が存在しなければ90°右を向いた後、前に1マス進む<br>
+                4.右に障害物が存在する場合<br>
+                  5.進行方向左に障害物が存在しなければ90°左を向いた後、前に1マス進む<br>
+              　　　　　　　　　　　　6.左に障害物が存在する場合180°後ろを向いた後、前に1マス進む<br>
+              上の1~6を繰り返すようだ。<br>
+              怪物を処分するために協力者を募り、町全体の地図と障害物の設置可能位置、<br>
+              怪物が障害物と認識するに足るハリボテの物体と運搬用のドローンを用意した。<br>
+              あなたは怪物をダムの下流であるゴールへ誘導するルートと障害物設置箇所を策定せよ！<br>
               これらを解決するための最後の謎を解いていこう！</p>
             <figure class="image__container">
               <img src="assets/images/quest3.png" alt="">
@@ -227,7 +238,8 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>設置位置を小さい順に半角数字で指定、数字同士の間には<br>
+              半角スペースで1マス空けて、キーワードを入力</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
